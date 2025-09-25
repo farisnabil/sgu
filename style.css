@@ -1,0 +1,171 @@
+/* Hero Section */
+.hero {
+  background: url('../src/Home-page.png') center/cover no-repeat;
+  min-height: 500px;
+}
+
+body{
+  font-family: "cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Icon Boxes */
+.icon-box {
+  font-size: 60px;
+  margin-bottom: 15px;
+  color: #007bff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Button Animations */
+.btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.2);
+}
+
+/* Form Message */
+#formMsg {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Navbar - ثابت في جميع الصفحات */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 70px; /* ارتفاع ثابت */
+  padding: 0.5rem 1rem; /* مسافات ثابتة */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem; /* حجم ثابت للنصوص */
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  max-height: 40px; /* حجم ثابت للشعار */
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1);
+}
+
+/* ديزاين ثابت للكليات في جميع الصفحات */
+.nav-item.dropdown .dropdown-menu {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 0;
+  min-width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+}
+
+.nav-item.dropdown .dropdown-item {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-item.dropdown .dropdown-item i {
+  margin-left: 12px;
+  font-size: 1.2rem;
+  color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.nav-item.dropdown .dropdown-item:hover {
+  background: #3498db;
+  color: #ffffff;
+  transform: translateX(5px);
+}
+
+.nav-item.dropdown .dropdown-item:hover i {
+  color: #ffffff;
+}
+
+.nav-item.dropdown .dropdown-divider {
+  margin: 6px 0;
+  border-color: rgba(52, 152, 219, 0.2);
+}
+
+/* تعديل حجم الصور لتكون متساوية */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 400px;
+  }
+  
+  .icon-box {
+    font-size: 50px;
+  }
+  
+  .card-img-top {
+    height: 180px;
+  }
+  
+  .navbar {
+    min-height: 60px;
+  }
+}
+/* ظل للصفحة النشطة */
+.navbar-nav .nav-link.active {
+    position: relative;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, #ffd700, #ffed4e);
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.4);
+}
+
+/* تأثير عند hover */
+.navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+}
+/* إخفاء العداد */
+footer .mt-2 {
+  opacity: 0;      /* يخليه شفاف */
+  width: 1px;      /* عرض صغير جداً */
+  height: 1px;     /* ارتفاع صغير جداً */
+  overflow: hidden;
+}

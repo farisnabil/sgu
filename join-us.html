@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Join Us - Aim Club</title>
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* أزرق داكن متدرج */
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      color: #fff;
+    }
+    .join-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 700px;
+    }
+    .logo-placeholder {
+      margin-bottom: 30px;
+    }
+    .logo-placeholder img {
+      max-height: 120px;
+      border-radius: 15px;
+      border: 4px solid #d4af37; /* لمسة ذهبية */
+      transition: transform 0.3s ease;
+    }
+    .logo-placeholder img:hover {
+      transform: scale(1.1);
+    }
+    .welcome-text {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #d4af37; /* لون ذهبي للنص */
+      font-weight: 600;
+    }
+    .social-title {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+    .social-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      background: #fff;
+      color: #1e3c72;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .social-btn i {
+      margin-left: 10px;
+      font-size: 1.5rem;
+    }
+    .social-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4); /* ظل ذهبي */
+      color: #2a5298;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #d4af37;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="join-container">
+    <div class="logo-placeholder">
+      <img src="../src/aim-club-logo.png" alt="Aim Club Logo" id="clubLogo">
+    </div>
+    <p class="welcome-text">انضم إلينا لتكون جزءًا من الإبداع والتطور!</p>
+    <h2 class="social-title">تواصل معنا</h2>
+    <div class="social-links">
+      <a href="https://www.tiktok.com" target="_blank" class="social-btn">TikTok <i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com" target="_blank" class="social-btn">Facebook <i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="social-btn">Instagram <i class="fab fa-instagram"></i></a>
+      <a href="https://www.whatsapp.com" target="_blank" class="social-btn">WhatsApp <i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.threads.net" target="_blank" class="social-btn">Threads <i class="fab fa-threads"></i></a>
+      <a href="https://www.x.com" target="_blank" class="social-btn">X <i class="fab fa-x-twitter"></i></a>
+    </div>
+    <div class="footer">
+      <p>© 2025 Aim Club - تابعنا للمزيد من التحديثات!</p>
+    </div>
+  </div>
+</body>
+</html>
